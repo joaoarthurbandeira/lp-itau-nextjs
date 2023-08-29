@@ -10,7 +10,7 @@ import ImagePhone from "@/assets/phone.png";
 
 export function SectionService() {
   return (
-    <section className="relative w-full h-[965px] " id="section-services">
+    <section className="relative w-full min-h-[965px]" id="section-services">
       <Container>
         <div className="flex-1 max-w-[594px] pt-32">
           <span className="block text-primary-orange text-sm font-bold uppercase mb-9">
@@ -23,7 +23,7 @@ export function SectionService() {
             Veja como você pode cuidar das suas finanças pelo app Itaú de forma
             segura, rápida e o melhor, no conforto da sua casa.
           </p>
-          <ul className="flex flex-col items-start gap-9">
+          <ul className="flex flex-col items-start gap-9 ">
             <li className="flex items-center gap-9 pb-9 border-b-[1px] border-opacity-gray">
               <div className="w-7 h-7 flex items-center justify-center">
                 <Image src={PhoneIcon} alt="Icon Phone" />

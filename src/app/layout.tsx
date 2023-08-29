@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={lato.className}>
         <Header />
-        <div className="pt-20 pb-8">{children}</div>
+        <div className="pt-20">{children}</div>
         <Footer />
       </body>
     </html>
