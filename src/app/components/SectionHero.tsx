@@ -26,7 +26,14 @@ export function SectionHero() {
               <Image src={ImgGooglePlay} alt="Google Play" />
             </button>
           </div>
-          <button className="flex items-center gap-3">
+          <button
+            className="flex items-center gap-3"
+            onClick={() => {
+              const element = document.getElementById("section-services");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}>
             <Image src={Arrow} alt="Arrow explorer" />
             <span className="text-white text-sm font-bold">
               Continue explorando
