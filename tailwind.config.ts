@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   content: [
@@ -6,9 +7,14 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     backgroundImage: {
       img_bg_hero: "url('../assets/bg-hero.jpg')",
+    },
+    screens: {
+      xs: "493px",
+      ...defaultTheme.screens,
     },
     extend: {
       colors: {
