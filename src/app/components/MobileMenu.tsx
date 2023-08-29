@@ -36,7 +36,7 @@ function MobileMenu() {
         className={
           menuOpen
             ? "fixed left-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 flex flex-col justify-center items-center  "
-            : "fixed left-[-100%] w-[65%] h-screen top-0 p-10 ease-in duration-500"
+            : "fixed left-[-100%] w-[65%] h-screen top-0 p-10 ease-in duration-500 flex flex-col justify-center items-center "
         }>
         {/* Close button */}
         <div className="absolute top-4 right-6 p-4" aria-label="Close Menu">
