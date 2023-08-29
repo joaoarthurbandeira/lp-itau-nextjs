@@ -35,19 +35,17 @@ function MobileMenu() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 flex flex-col justify-center items-center  "
             : "fixed left-[-100%] w-[65%] h-screen top-0 p-10 ease-in duration-500"
         }>
         {/* Close button */}
-        <div
-          className="flex w-full items-center justify-end "
-          aria-label="Close Menu">
+        <div className="absolute top-4 right-6 p-4" aria-label="Close Menu">
           <div onClick={handleNav} className="cursor-pointer">
             <AiOutlineClose size={25} />
           </div>
         </div>
         {/* Mobile Menu */}
-        <div className="flex flex-col  gap-12  pt-4 ">
+        <div className="flex flex-col  gap-12  pt-4  ">
           {/* Navs Items */}
           <nav>
             <ul className="flex  flex-col  gap-12  ">
